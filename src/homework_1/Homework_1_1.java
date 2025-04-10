@@ -7,6 +7,6 @@ public class Homework_1_1 {
         int b = 1;
         int c = 2;
         int a = 4*(b+c-1)/2;
-        System.out.println("a= " + a);
+        System.out.println("Ответ = " + a);
     }
 }
