@@ -13,11 +13,16 @@ public class homework2_5 {
             System.out.println("Вы ввели не целое число");
             return;
         }
-        if (a < 0) {
-            System.out.println("Вы ввели не положительное число");
+        if (a <= 0) {
+            if (a == 0) {
+                System.out.println("Введите значение больше 0");
+                return;
+            }
+            System.out.println("Вы ввели отрицательное число");
             return;
         }
-        for (int i = 1; i < a; i++) {
+
+        for (int i = 1; i < a + 1; i++) {
             sum = sum + i;
         }
 
