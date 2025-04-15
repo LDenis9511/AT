@@ -8,24 +8,27 @@ public class homework2_5 {
         int sum = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое положительное число: ");
-        double a = scanner.nextDouble();
-        if (a % 1 != 0) {
-            System.out.println("Вы ввели не целое число");
-            return;
-        }
-        if (a <= 0) {
-            if (a == 0) {
-                System.out.println("Введите значение больше 0");
+
+        while (scanner.hasNextInt()) {
+            int a = scanner.nextInt();
+            if (a <= 0) {
+                if (a == 0) {
+                    System.out.println("Введите значение больше 0");
+                    return;
+                }
+                System.out.println("Вы ввели отрицательное число");
                 return;
             }
-            System.out.println("Вы ввели отрицательное число");
+
+            for (int i = 1; i < a + 1; i++) {
+                sum = sum + i;
+            }
+
+            System.out.println("Сумма чисел от 1 до " + a + " = " + sum);
             return;
         }
+        ;
+        System.out.println("Вы ввели не целое число");
 
-        for (int i = 1; i < a + 1; i++) {
-            sum = sum + i;
-        }
-
-        System.out.println("Сумма чисел от 1 до " + String.format("%.0f", a) + " = " + sum);
     }
 }
