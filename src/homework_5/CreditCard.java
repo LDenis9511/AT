@@ -4,8 +4,9 @@ public class CreditCard {
     long Creditnumber;
     int CreditSum;
 
-    public CreditCard(long CreditNumber) {
+    public CreditCard(long CreditNumber,int CreditSum) {
         this.Creditnumber = CreditNumber;
+        this.CreditSum = CreditSum;
     }
 
     public void AddSum(int Sum) {
@@ -21,9 +22,9 @@ public class CreditCard {
     }
 
     public static void main(String[] args) {
-        CreditCard cart = new CreditCard(1);
-        CreditCard cart2 = new CreditCard(2);
-        CreditCard cart3 = new CreditCard(3);
+        CreditCard cart = new CreditCard(1,1000);
+        CreditCard cart2 = new CreditCard(2,1000);
+        CreditCard cart3 = new CreditCard(3,1000);
         cart.AddSum(500);
         cart2.AddSum(1100);
         cart3.SubSum(800);
