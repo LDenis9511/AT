@@ -1,7 +1,5 @@
 package homework_5;
 
-import java.util.Arrays;
-
 public class Bancomat {
     int twenty;
     int fifty;
@@ -26,17 +24,20 @@ public class Bancomat {
         if (Sum > twenty * 20 + fifty * 50 + one_hundred * 100) {
             System.out.println("Недостаточно средств");
         } else {
-            while (Sum >= 100) {
+            while (Sum >= 100 && one_hundred >= 1) {
                 cntO += 1;
                 Sum -= 100;
+                one_hundred = one_hundred - 1;
             }
-            while (Sum >= 50) {
+            while (Sum >= 50 && fifty >= 1) {
                 cntF += 1;
                 Sum -= 50;
+                fifty = fifty - 1;
             }
-            while (Sum >= 20) {
+            while (Sum >= 20 && twenty >= 1) {
                 cntT += 1;
                 Sum -= 20;
+                twenty = twenty - 1;
             }
             if (Sum != 0) {
                 System.out.println("Операция не произойдет, не удается выдать остаток " + Sum);
@@ -50,13 +51,15 @@ public class Bancomat {
 
     public static void main(String[] args) {
         Bancomat bancomat = new Bancomat();
-        bancomat.Addfifty(3);
-        bancomat.Addone_hundred(4);
-        bancomat.Addtwenty(4);
-        bancomat.Withdraw_money(421);
+        bancomat.Addfifty(5);
+        bancomat.Addone_hundred(5);
+        bancomat.Addtwenty(5);
+        bancomat.Withdraw_money(420);
         System.out.println();
-        bancomat.Withdraw_money(190);
+        bancomat.Withdraw_money(200);
         System.out.println();
         bancomat.Withdraw_money(5190);
+        System.out.println();
+        bancomat.Withdraw_money(211);
     }
 }

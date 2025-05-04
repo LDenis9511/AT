@@ -4,32 +4,32 @@ public class CreditCard {
     long Creditnumber;
     int CreditSum;
 
-    public CreditCard(long CreditNumber,int CreditSum) {
+    public CreditCard(long CreditNumber, int CreditSum) {
         this.Creditnumber = CreditNumber;
         this.CreditSum = CreditSum;
     }
 
-    public void AddSum(int Sum) {
+    public void addsum(int Sum) {
         CreditSum += Sum;
     }
 
-    public void SubSum(int Sum) {
+    public void subsum(int Sum) {
         CreditSum -= Sum;
     }
 
-    public void Balance() {
+    public void balance() {
         System.out.println("Баланс счета  " + Creditnumber + " = " + CreditSum);
     }
 
     public static void main(String[] args) {
-        CreditCard cart = new CreditCard(1,1000);
-        CreditCard cart2 = new CreditCard(2,1000);
-        CreditCard cart3 = new CreditCard(3,1000);
-        cart.AddSum(500);
-        cart2.AddSum(1100);
-        cart3.SubSum(800);
-        cart.Balance();
-        cart2.Balance();
-        cart3.Balance();
+        CreditCard cart = new CreditCard(1, 1000);
+        CreditCard cart2 = new CreditCard(2, 1000);
+        CreditCard cart3 = new CreditCard(3, 1000);
+        cart.addsum(500);
+        cart2.addsum(1100);
+        cart3.subsum(800);
+        cart.balance();
+        cart2.balance();
+        cart3.balance();
     }
 }
