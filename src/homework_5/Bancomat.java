@@ -5,19 +5,19 @@ public class Bancomat {
     int fifty;
     int one_hundred;
 
-    public void Addtwenty(int twenty) {
+    public void addtwenty(int twenty) {
         this.twenty += twenty;
     }
 
-    public void Addfifty(int fifty) {
+    public void addfifty(int fifty) {
         this.fifty += fifty;
     }
 
-    public void Addone_hundred(int one_hundred) {
+    public void addone_hundred(int one_hundred) {
         this.one_hundred += one_hundred;
     }
 
-    public void Withdraw_money(int Sum) {
+    public void withdraw_money(int Sum) {
         int cntT = 0;
         int cntF = 0;
         int cntO = 0;
@@ -51,15 +51,15 @@ public class Bancomat {
 
     public static void main(String[] args) {
         Bancomat bancomat = new Bancomat();
-        bancomat.Addfifty(5);
-        bancomat.Addone_hundred(5);
-        bancomat.Addtwenty(5);
-        bancomat.Withdraw_money(420);
+        bancomat.addfifty(5);
+        bancomat.addone_hundred(5);
+        bancomat.addtwenty(5);
+        bancomat.withdraw_money(420);
         System.out.println();
-        bancomat.Withdraw_money(200);
+        bancomat.withdraw_money(200);
         System.out.println();
-        bancomat.Withdraw_money(5190);
+        bancomat.withdraw_money(5190);
         System.out.println();
-        bancomat.Withdraw_money(211);
+        bancomat.withdraw_money(211);
     }
 }

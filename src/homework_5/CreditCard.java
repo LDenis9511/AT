@@ -27,7 +27,7 @@ public class CreditCard {
         CreditCard cart3 = new CreditCard(3, 1000);
         cart.addsum(500);
         cart2.addsum(1100);
-        cart3.subsum(800);
+        cart3.subsum(820);
         cart.balance();
         cart2.balance();
         cart3.balance();
