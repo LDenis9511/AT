@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        circle circle = new circle();
-        circle circle1 = new circle();
-        triangle triangle = new triangle();
-        rectangle rectangle = new rectangle();
-        rectangle rectangle1 = new rectangle();
+        Circle circle = new Circle();
+        Circle circle1 = new Circle();
+        Triangle triangle = new Triangle();
+        Rectangle rectangle = new Rectangle();
+        Rectangle rectangle1 = new Rectangle();
         circle.setRadius(5);
         circle1.setRadius(12);
         triangle.setDlinaosnovania(20);

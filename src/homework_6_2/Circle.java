@@ -1,6 +1,6 @@
 package homework_6_2;
 
-public class circle extends figure {
+public class Circle extends Figure {
     private double perimeter;
     private double areacal;
     private double radius;
