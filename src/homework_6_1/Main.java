@@ -4,19 +4,19 @@ import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
-        patsiyent patsiyent = new patsiyent();
+        Patsiyent patsiyent = new Patsiyent();
         patsiyent.setPlan(1);
-        terapevt terapevt = new terapevt();
+        Terapevt terapevt = new Terapevt();
         terapevt.infodoctor(patsiyent.getPlan());
         patsiyent.setDoctor(terapevt.getDoctor());
         if (Objects.equals(terapevt.getDoctor(), "Хирург")) {
-            khirurg khirurg = new khirurg();
-            khirurg.Lechit();
+            Khirurg khirurg = new Khirurg();
+            khirurg.lechit();
         } else if (Objects.equals(terapevt.getDoctor(), "Дантист")) {
-            dentist dentist = new dentist();
-            dentist.Lechit();
+            Dentist dentist = new Dentist();
+            dentist.lechit();
         } else if (Objects.equals(terapevt.getDoctor(), "Терапевт")) {
-            terapevt.Lechit();
+            terapevt.lechit();
         }
     }
 }

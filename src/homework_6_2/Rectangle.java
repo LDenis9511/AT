@@ -1,41 +1,29 @@
 package homework_6_2;
 
-public class triangle extends figure {
+public class Rectangle extends Figure {
     private double perimeter;
     private double areacal;
-    private double visota;
-    private double dlinaosnovania;
     private double dlinastoroni1;
     private double dlinastoroni2;
 
     @Override
     public void areacalculation() {
-        if (dlinaosnovania <= 0) {
-            System.out.println("Длинна основания не указана");
-        } else if (visota <= 0) {
-            System.out.println("Высота не указана");
-        } else
-            this.areacal = 0.5 * visota * dlinaosnovania;
+        if (dlinastoroni1 <= 0) {
+            System.out.println("Длинна стороны 1 не указана");
+        } else if (dlinastoroni2 <= 0) {
+            System.out.println("Длинна стороны 2 не указана");
+        }else
+        this.areacal = dlinastoroni1 * dlinastoroni2;
     }
 
     @Override
     public void perimeterculation() {
-        if (dlinaosnovania <= 0) {
-            System.out.println("Длинна основания не указана");
-        } else if (dlinastoroni1 <= 0) {
+        if (dlinastoroni1 <= 0) {
             System.out.println("Длинна стороны 1 не указана");
         } else if (dlinastoroni2 <= 0) {
             System.out.println("Длинна стороны 2 не указана");
-        } else
-            this.perimeter = dlinaosnovania + dlinastoroni1 + dlinastoroni2;
-    }
-
-    public void setVisota(double visota) {
-        this.visota = visota;
-    }
-
-    public void setDlinaosnovania(double dlinaosnovania) {
-        this.dlinaosnovania = dlinaosnovania;
+        }else
+        this.perimeter = (dlinastoroni1 + dlinastoroni2) * 2;
     }
 
     public void setDlinastoroni1(double dlinastoroni1) {

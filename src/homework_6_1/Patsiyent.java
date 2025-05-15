@@ -1,6 +1,6 @@
 package homework_6_1;
 
-public class patsiyent {
+public class Patsiyent {
     private int plan;
     private String doctor;
 
