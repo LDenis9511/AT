@@ -1,8 +1,8 @@
 package homework_6_1;
 
-public class khirurg extends doctor {
+public class Khirurg extends Doctor {
     @Override
-    void Lechit() {
+    void lechit() {
         System.out.println("Хирург лечит...");
     }
 }

@@ -1,6 +1,6 @@
 package homework_6_1;
 
-public class terapevt extends doctor {
+public class Terapevt extends Doctor{
     private String doctor;
 
     public String infodoctor(int plan) {
@@ -17,7 +17,7 @@ public class terapevt extends doctor {
     }
 
     @Override
-    void Lechit() {
+    void lechit() {
         System.out.println("Терапевт лечит...");
     }
 
