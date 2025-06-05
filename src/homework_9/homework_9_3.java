@@ -19,13 +19,11 @@ public class homework_9_3 {
         String[] mass2 = {"c", "b", "a"};
         String[] mass3 = {"c", "c", "c", "c"};
 
-        xzkaknazvat(mass);
-        xzkaknazvat(mass2);
-        xzkaknazvat(mass3);
+        transposition(mass);
+        transposition(mass2);
+        transposition(mass3);
     }
-
-
-    public static void xzkaknazvat(String[] mass) {
+    public static void transposition(String[] mass) {
         Map<String, Boolean> res = new HashMap<>();
         for (int i = 0; i < mass.length; i++) {
             if (res.containsKey(mass[i])) {
@@ -35,7 +33,5 @@ public class homework_9_3 {
             }
         }
         System.out.println("wordMultiple " + Arrays.toString(mass) + " -> " + res);
-
     }
-
 }

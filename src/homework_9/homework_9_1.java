@@ -17,6 +17,5 @@ public class homework_9_1 {
         }
         System.out.println("Введенные значения без повторений");
         System.out.println(number1);
-
     }
 }

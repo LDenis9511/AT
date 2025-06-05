@@ -17,12 +17,3 @@ public class Animals {
         return animals;
     }
 }
-
-
-
-
-
-
-
-
-
